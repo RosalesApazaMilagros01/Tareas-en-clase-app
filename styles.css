@@ -1,0 +1,428 @@
+
+
+.imagenes {
+
+width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0.8vw; /* Adjust for spacing */
+  height: auto;
+}
+
+.imagenes .imgtet {
+  background-color:#001550;
+  max-width: 55vw;
+  height: 25vw;
+  margin: 0.5vw; /* Space between images */
+  transition: transform 0.3s ease, z-index 0s ease; /* Added transition for smooth scaling */
+
+}
+.imagenes img:not(.imgcar,.imgtet) {
+  max-width: 28vw;
+  height: auto;
+  margin: 0.5vw; /* Space between images */
+  border-radius:1vw;
+  transition: transform 0.3s ease, z-index 0s ease; /* Added transition for smooth scaling */
+
+}
+.imagenes .imgcar {
+  max-width: 58vw;
+  height: 15vw;
+  margin: 0.5vw; /* Space between images */
+  transition: transform 0.3s ease, z-index 0s ease; /* Added transition for smooth scaling */
+
+}
+
+.imagenes img:not(.imgcar):hover,
+.imagenes .imgcar:hover {
+  margin: 0.5vw; /* Space between images */
+ 
+    transform: scale(1.5); /* Adjust scale as needed */
+    z-index: 10; /* Ensure the enlarged image is on top */
+    position: relative; /* Ensure the image is positioned correctly when enlarged */
+}
+
+
+
+.todo {
+  margin-left: 10%;
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;  /* Center items horizontally */
+  justify-content: center; /* Center items vertically */
+}
+
+
+.button-container {
+  background-color:#000000;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: center; 
+  padding: 0.2vw;
+z-index: 200;
+width: 10%;
+height: 99%;
+
+
+}
+
+button,a{
+  background-color: #000dca;
+  box-shadow: 0 0 5px rgba(103, 77, 250, 0.925);
+ color: white;
+  border-radius:1vw;
+  text-align: center;
+  margin: auto;
+  padding: 0.5vw; 
+  border: none; 
+  cursor: pointer;
+  font-family: "Geo", sans-serif; 
+  font-size: 1.2vw;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+  width: 6.5vw;
+  text-shadow: 0.1vw 0.2vw 0.2vw #000000;
+  font-weight: bold;
+  text-decoration: none;
+ 
+}
+
+button:hover, a:hover {
+
+  background-color: #ffffff;
+  color: #000;
+  box-shadow: 0 0 0.6vw 0.3vw rgb(145, 145, 145); 
+}
+
+body {
+  font-family:Fredoka;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  }
+ 
+/*estos estilos seran para el fondo principal del typin animacion*/
+h5 {
+  font-size: 2.5vh;
+  color: #e2dada;
+  margin-left: 15vw;
+
+}
+
+
+header {
+  margin-left: 10%;
+  width: 90%;
+  position: absolute;
+  display: grid;
+  align-items: center;
+  background-color: #000000;
+  height: 11vw;
+  position: sticky;
+  overflow: hidden;
+  z-index: 2;
+}
+header h1 {
+  margin: auto; 
+  background: linear-gradient(to bottom, #00aeffe1, #4400ff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  font-size: 6vw;
+  text-align: center;
+  font-family: "Bungee Shade", sans-serif;
+}
+
+
+
+  #volver {
+    background-color: #031136;
+    color: #ffffff;
+    margin: 0.5vw;
+    
+  }
+  
+ 
+  
+
+/*estos estilos seran para el rpimer fondo de estrellas*/
+#diez {
+ 
+  display: block;
+  background-color: #000;
+}
+
+.estrellas h1 {
+  position: relative;
+  background: linear-gradient(to right, #075dfc, #0f118bef, #210af0, #210af0, #0b0d5eef, #416de6);
+  -webkit-background-clip: text;
+  background-clip: text;
+  text-align: center;
+  color: transparent;
+  font-size: 5vw;
+  font-family: 'Fredoka';
+
+}
+.estrellas{
+  margin: auto;
+}
+.portada {
+ 
+  margin-left: 10%;
+  position: fixed; 
+  background-color: #000;
+
+  width: 90%;
+  height: 100%;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: center;
+  z-index: -1000;
+}
+
+
+
+.estrella {
+ 
+  width: 0.3vw;
+  height: 0.2vw;
+  background-color: #ffffff;
+  border-radius: 50%;
+  box-shadow: 0 0 10px 0.8px rgba(233, 217, 193, 0.856);
+}
+
+
+
+
+
+
+.project-container {
+  margin:  auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4vw;
+  width: 90%;
+ 
+}
+
+
+.project-item {
+  background-color: #000000e0;
+  border-radius: 2vw;
+  box-shadow: 0.1vw 8px 0.9vw 0.3vw rgb(99, 98, 98); 
+        overflow: hidden;
+  height: auto;
+  width: 60vw; /* Tamaño inicial del contenedor */
+  margin: 5vw 0 5vw 0vw;
+  padding: 1vw;
+  transition: all 0.3s ease-in-out;
+  justify-content: center;
+  
+
+}
+
+.project-item p{
+  border-radius: 10px;
+  background-color: white;
+  color: #000;
+  padding: 1vw;
+  font-family:Fredoka;
+}
+
+
+.project-item h2 {
+  letter-spacing: 2vw;
+  width: auto;
+  font-size: 2.8vw;
+  font-family: "Concert One", sans-serif;
+  font-weight: bold;
+  padding: 2vw 0.2vw 1vw 0vw;
+  margin: -1vw -2vw 1vw -1vw;
+  color: #ffffff;
+  background-color:#1302a8;
+  text-transform: uppercase;
+  text-align: center;
+}
+.project-item h3 {
+  width: 101%;
+  font-size: 1.2vw;
+  font-family: "Concert One", sans-serif;
+  font-weight: bold;
+  padding: 1vw 1vw 1vw 1vw;
+  margin: 1vw -1vw 1vw -1vw;
+
+  color: #ffffff;
+  background-color:#244d4ab9;
+  letter-spacing: 0.2vw;
+  text-transform: uppercase;
+  text-align: center;
+}
+.project-item .div{
+  width: 70%;
+  margin: auto;
+}
+
+.img {
+  margin: auto;
+  width: 90%;
+  height: auto;
+ 
+}
+/* Estilos para pantallas pequeñas */
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr;
+  }
+
+  .img img {
+    max-width: 0%;
+    height: auto;
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+  .project-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .imgg img {
+    max-width: 40%;
+    height: auto;
+  }
+}
+@media (max-width: 768px) {
+  .proyectos{
+    display: flex;
+    flex-direction: column;
+  }
+}
+@media (max-width: 908px) {
+  .todo{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+.image-gallery {
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-top: 1vw;
+  height: 31vw;
+  padding: 0 auto;
+  overflow: hidden;
+ 
+}
+
+.image-container {
+  position: relative;
+  transition: all 3s ease;
+border-radius:1vw;
+
+
+}
+
+.image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin:0 auto;
+  border-radius:1vw;
+ 
+}
+
+.image-container:hover {
+  object-fit: contain;
+  padding:0.5vw;
+  width: 180vw;
+  height: 30vw;
+  border-radius:0vw;
+
+ 
+}
+
+.image-container:not(:hover) {
+  width: 8vw;
+  height: 30vw;
+
+
+}
+
+.image-container:not(:hover) img {
+  filter: blur(5px);
+}
+
+h4 {
+  font-family: 'Concert One';
+  font-size: 1.1vw;
+  font-weight: 800;
+  color: #c9c4c4;
+  letter-spacing: 1px;
+  position: relative;
+  text-align: center;
+  animation: colorChange linear infinite 5s;
+}
+
+h3 {
+  font-family: 'Concert One';
+  font-size: 2vw;
+  font-weight: 800;
+  color: #ffffff;
+  letter-spacing: 2px;
+  position: relative;
+  padding-bottom: 1vw;
+  text-align: center;
+}
+
+@keyframes colorChange {
+0% { color: #2f00ff; }
+50% { color: #00f7ff; }
+100% { color: #ffffff; }
+}
+
+ul {
+  background-color:#022f83;
+text-align: justify;
+list-style-type: none;
+counter-reset: item;
+padding: 1vw;
+
+}
+
+.download-button {
+  padding: 10px 20px;
+  background-color: #3746b3; /* Color del botón */
+  color: white; /* Color del texto */
+  border: none; /* Sin borde */
+  border-radius: 5px; /* Bordes redondeados */
+  cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+  text-decoration: none; /* Sin subrayado */
+  display: inline-block; /* Para que el enlace se comporte como un botón */
+}
+.download-button:hover {
+  background-color: #2a3b8a; /* Color del botón al pasar el ratón */
+}
+
+h4, p, ul{
+  color:white;
+}
+
+
+
+.descarga{
+
+  text-align: center;
+}
+.descarga .download-button{
+  background-color: #000dca;
+color:#ffffff
+}
